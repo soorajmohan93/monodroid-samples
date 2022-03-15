@@ -11,7 +11,6 @@ namespace SigninQuickstart
 		public void OnResult(Object result)
 		{
 			var googleSignInResult = result as GoogleSignInResult;
-			Activity.HideProgressDialog();
 			Activity.HandleSignInResult(googleSignInResult);
 		}
 	}
